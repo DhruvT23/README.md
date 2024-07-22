@@ -64,3 +64,8 @@ contract newToken {
 After the code has been compiled, you may proceed to deploy the contract by navigating to the "Deploy & Run Transactions" tab located in the left-hand sidebar. Select the "newToken" contract from the dropdown menu, and then click the "Deploy" button.
 
 Upon successful deployment of the contract, you will be able to interact with it by invoking the various functions available.
+
+## Where to execute this code?
+By working with this code on "https://remix.ethereum.org/," an easy-to-use web platform designed specifically for developing and testing Ethereum smart contracts, we may efficiently compile, deploy, and administer the ImprovedToken contract.
+
+Moreover for detailed explantion, here's an explanatory video regarding the code, "link" kindly refer to the following link for the detailed explantion.
