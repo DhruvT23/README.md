@@ -22,16 +22,20 @@ If required, we can reduce the total amount of tokens accessible by using the bu
 
 ### Functions used.
 #### Mint function
+```
  function mint(address _address, uint _value) public {
         totalSupply += _value;
         balances[_address] += _value;
     }
+```
 #### Burn function
- function burn (address _address, uint _value) public {
+ ```
+function burn (address _address, uint _value) public {
         if (balances[_address] >= _value){
             totalSupply -= _value;
             balances[_address] -= _value;
         }
+```
 We can use Remix to run this code, an online Solidity IDE.
 
 ```javascript
