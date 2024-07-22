@@ -8,8 +8,30 @@ This program is a contract written in Solidity, a programming language used for 
 
 ## Getting Started
 
-### Executing program
+## Executing program
 
+## Applications
+### Create Tokens
+Tokens can be generated and linked to addresses in a smart contract using the mint function. When the mint function is called, new tokens are generated and assigned to specific blockchain addresses (wallets). This process increases the total number of available tokens by adding newly minted tokens to the existing pool.
+
+#### Mint Tokens
+Tokens can be added to the current token balance once they have been produced.
+
+#### Burn Tokens
+If required, we can reduce the total amount of tokens accessible by using the burn function. As a result, tokens are taken from certain addresses, reducing their supply.
+
+### Functions used.
+#### Mint function
+ function mint(address _address, uint _value) public {
+        totalSupply += _value;
+        balances[_address] += _value;
+    }
+#### Burn function
+ function burn (address _address, uint _value) public {
+        if (balances[_address] >= _value){
+            totalSupply -= _value;
+            balances[_address] -= _value;
+        }
 We can use Remix to run this code, an online Solidity IDE.
 
 ```javascript
